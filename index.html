@@ -387,8 +387,8 @@ function exportQuestionsJSON(){
 /* ===== スプレッドシート方式：GoogleスプレッドシートのCSVを問題データにする =====
    文章の○✕問題はスプレッドシートで管理。写真つき問題（15問）はアプリに内蔵。 */
 /* ↓↓↓ ここにスプレッドシートのURLを貼り付けてください（手順書を参照） ↓↓↓ */
-var SHEET_CSV_URL  = "";   // 「ウェブに公開」した CSV のURL（…/pub?...&output=csv）
-var SHEET_EDIT_URL = "";   // 編集用スプレッドシートのURL（…/edit）
+var SHEET_CSV_URL  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQo9CYupmcF8TK2kcNraeun7mpGeYq12XNj3zLWAAFy78AGDFZskmqwrp2SpIG5hZnkt7zKYaHBctFJ/pub?output=csv";   // 「ウェブに公開」した CSV のURL
+var SHEET_EDIT_URL = "https://docs.google.com/spreadsheets/d/1CsYWd_S1r38Oo3yZ23Wg7vyjl8ngH1OppWFgy3uRzcY/edit";   // 編集用スプレッドシートのURL
 /* ↑↑↑ ここまで（生徒に配るのと同じファイルに入れます） ↑↑↑ */
 var SHEETCK="examprep:sheetcache:v5";
 function sheetMode(){ return !!(SHEET_CSV_URL && SHEET_CSV_URL.trim()); }
